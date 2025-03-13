@@ -708,6 +708,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .leading-\[50px\] {
   line-height: 50px;
 }

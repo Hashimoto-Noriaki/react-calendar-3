@@ -1,28 +1,16 @@
 import { PrimaryBtn } from '../atoms/PrimaryBtn'
+import { NotLoginLayout } from '../templates/NotLoginLayout'
 
 export const TopPage = () => {
     return (
-        <div className="relative">
-            <header className="bg-white fixed leading-[50px] top-0 left-0 right-0">
-                <div className="container mx-auto flex justify-between">
-                    <p className="logo">スケジュール管理</p>
-                    <nav>
-                        <ul className="flex gap-5">
-                            <li className="text-lime-800">利用説明</li>
-                            <li className="text-lime-800">ログイン</li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            <main className="bg-gradient-to-r from-lime-100 to-lime-200 h-screen flex flex-col justify-center items-center">
-                <div className="text-center">
-                    <h1 className="logo text-7xl">スケジュール管理App</h1>
-                    <p className="text-3xl pt-[20vh]">スケジュールを管理します。</p>
-                </div>
-                <div className="pt-[10vh]">
+        <NotLoginLayout>
+            <div className="text-center">
+                <h1 className="logo text-7xl">スケジュール管理App</h1>
+                <p className="pt-[10vh] text-5xl">スケジュールを管理します。</p>
+                <div className="pt-[20vh]">
                     <PrimaryBtn>ログイン</PrimaryBtn>
                 </div>
-            </main>
-        </div>
+            </div>
+        </NotLoginLayout>
     )
 }
