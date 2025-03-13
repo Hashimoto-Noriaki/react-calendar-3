@@ -1,3 +1,5 @@
+import { PrimaryBtn } from '../atoms/PrimaryBtn'
+
 export const TopPage = () => {
     return (
         <div className="relative">
@@ -18,9 +20,7 @@ export const TopPage = () => {
                     <p className="text-3xl pt-[20vh]">スケジュールを管理します。</p>
                 </div>
                 <div className="pt-[10vh]">
-                    <butto className="bg-lime-800 p-4 text-white text-lg rounded-lg">
-                        ログイン
-                    </butto>
+                    <PrimaryBtn>ログイン</PrimaryBtn>
                 </div>
             </main>
         </div>
