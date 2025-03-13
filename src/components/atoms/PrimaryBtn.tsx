@@ -1,13 +1,14 @@
 import { ReactNode } from 'react'
 
 type PropsType = {
+    onClick:() => void;
     children:ReactNode;
 }
 
-export const PrimaryBtn = ({ children }: PropsType) => {
+export const PrimaryBtn = ({ onClick,children }: PropsType) => {
     return (
-        <butto className="bg-lime-800 p-4 text-white text-lg rounded-lg">
+        <button className="bg-lime-800 p-4 text-white text-lg rounded-lg" onClick={onClick}>
             {children}
-        </butto>
+        </button>
     );
 };
