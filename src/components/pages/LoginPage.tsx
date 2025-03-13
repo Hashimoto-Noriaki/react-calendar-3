@@ -1,4 +1,5 @@
 import { PrimaryBtn } from '../atoms/PrimaryBtn'
+import { Input } from '../atoms/Input'
 import { NotLoginLayout } from '../templates/NotLoginLayout'
 
 export const LoginPage = () => {
@@ -8,18 +9,16 @@ export const LoginPage = () => {
             <form className="flex flex-col justify-center items-center gap-10">
                 <h1 className="text-lime-800 text-3xl font-bold">ログイン</h1>
                 <div className="w-[80%]">
-                    <input
+                    <Input
                         name="email"
                         type="text"
-                        className="w-full border-4 border-solid border-lime-800 p-4"
                         placeholder="メールアドレス"
                     />
                 </div>
                 <div className="w-[80%]">
-                    <input
+                    <Input
                         name="password"
                         type="text"
-                        className="w-full border-4 border-solid border-lime-800 p-4"
                         placeholder="パスワード"
                     />
                 </div>
