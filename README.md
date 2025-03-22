@@ -7,6 +7,8 @@ $ npx tailwindcss init -p
 ### サーバー起動
 ```
 npm run dev
+
+yarn dev
 ```
 
 ### tailsind実行
