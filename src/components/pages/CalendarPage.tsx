@@ -1,6 +1,7 @@
-import { eachDayOfInterval, eachWeekOfInterval, endOfMonth, endOfWeek, getMonth, startOfMonth,getDate,isToday,isSameMonth } from "date-fns";
+import { eachDayOfInterval, eachWeekOfInterval, endOfMonth, endOfWeek, getMonth, startOfMonth } from "date-fns";
 import { useEffect, useState } from "react";
 import { CalendarHeader } from '../organisms/CalendarHeader'
+import { CalendarBody } from '../organisms/CalendarBody'
 
 export const CalendarPage = () => {
     const today = new Date()
@@ -25,7 +26,7 @@ export const CalendarPage = () => {
             <h1 className=" font-bold text-3xl mb-5">{`${getMonth(today) + 1}月`}</h1>
             <table className="w-[80%] border-collapse border-2 border-solid border-lime-800 table-fixed">
                 <CalendarHeader/>
-                
+                <CalendarBody currentDate={today} dateList={dateList}/>
             </table>
         </>
     );

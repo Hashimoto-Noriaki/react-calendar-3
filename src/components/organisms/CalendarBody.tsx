@@ -1,4 +1,5 @@
 import { getDate,} from 'date-fns'
+import { dateColor } from "../../libs/date"
 
 type PropsType = {
     currentDate: Date;
@@ -6,11 +7,6 @@ type PropsType = {
 }
 
 export const CalendarBody = ({currentDate,dateList}: PropsType) => {
-    const dateColor = (targetDate: Date, currentDate: Date): string => {
-        if(isToday(currentDate)) return "bg-lime-800 text-white rounded-full"
-        return isSameMonth(targetDate,currentDate) ? "text-black" : "text-gray-300"
-    }
-
     return (
         <tbody>
             {dateList.map((oneWeek) => (
@@ -22,7 +18,7 @@ export const CalendarBody = ({currentDate,dateList}: PropsType) => {
                         >
                             <span 
                                 className= {`inline-block w-[20px] leading-[20px] text-center ${dateColor(
-                                    today,
+                                    item,
                                     currentDate
                                 )}`}
                             >
