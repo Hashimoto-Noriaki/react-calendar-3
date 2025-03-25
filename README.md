@@ -33,6 +33,8 @@ npm i date-fns
 ### 状態管理
 recoil
 
+contextにもリプレース予定
+
 ### 構成
 AtomicDesign
 
