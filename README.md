@@ -36,7 +36,8 @@ recoil
 contextにもリプレース予定
 
 ### 構成
-AtomicDesign
+- AtomicDesign
+- shared feature
 
 ### 導入予定
 - Tanstack Query
